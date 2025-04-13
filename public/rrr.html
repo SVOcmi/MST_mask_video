@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link href="main.css" rel="stylesheet" />
+</head>
+<body>
+<div class="video-container">
+  <video id="masterVideo"
+         muted
+         loop
+         autoplay
+         x="0" y="0">
+    <source src="public/video.mp4" type="video/mp4">
+  </video>
+  <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <div class="text">
+        <div class="text-block text-block-1">
+          <div>We're here</div>
+          <div class="video-block block1">
+            <clippath id="mask-1" maskUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="100%" height="100%" />
+            </clippath>
+          </div>
+          <div>to make</div>
+        </div>
+        <div class="text-block text-block-2">
+          <div>healthy</div>
+          <div class="video-block block2">
+            <mask id="mask-2" maskUnits="userSpaceOnUse">
+              <rect width="100%" height="100%" fill="blue" />
+            </mask>
+          </div>
+          <div>living effortless</div>
+        </div>
+        <div class="text-block text-block-3">
+          <div>so you can</div>
+          <div class="video-block block3"></div>
+          <div>live longer</div>
+        </div>
+        <div class="text-block text-block-4">
+          <div>and happier</div>
+          <div class="video-block block4"></div>
+        </div>
+      </div>
+      <div class="text-mob">
+        <div class="text-block-mob text-block-1">
+          <div>We're here</div>
+          <div class="video-block block1"></div>
+        </div>
+        <div class="text-block-mob text-block-2">
+          <div>to</div>
+          <div class="video-block block2"></div>
+          <div>make</div>
+        </div>
+        <div class="text-block-mob text-block-3">
+          <div class="video-block block3"></div>
+          <div>healthy living</div>
+        </div>
+        <div class="text-block-mob text-block-4">
+          <div>effortless so you</div>
+        </div>
+        <div class="text-block-mob text-block-5">
+          <div>can</div>
+          <div class="video-block block4"></div>
+          <div>live longer</div>
+        </div>
+        <div class="text-block-mob text-block-6">
+          <div>and happier</div>
+          <div class="video-block block5"></div>
+        </div>
+      </div>
+    </defs>
+</div>
+</svg>
+</body>
+</html>

@@ -1,0 +1,160 @@
+body {
+  background-color: #000000;
+}
+
+.text-block {
+  font-weight: bold;
+  font-size: 8vw;
+  color: #FFFFFF;
+}
+
+.text-block-1,
+.text-block-2,
+.text-block-3 {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  gap: 10px;
+  padding: 10px;
+}
+
+.text-block-4 {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.text {
+  position: relative;
+  z-index : 3;
+  display: block;
+}
+
+.text-mob {
+  position: relative;
+  z-index : 3;
+  display: none;
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#masterVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.video-block {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.video-block > rect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .text {
+    display: none;
+  }
+
+  .text-mob {
+    display: block;
+  }
+
+  .text-block-mob{
+    font-weight: bold;
+    font-size: 13vw;
+    color: #FFFFFF;
+  }
+
+  .text-block-1 {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .text-block-2 {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .text-block-3 {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .text-block-4 {
+    display: grid;
+    grid-template-columns: max-content;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .text-block-5 {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .text-block-6 {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
+/*video {*/
+/*  mask: url(#mask-1);*/
+/*}*/
+
+.inner-block {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+
+/*#mask-1 > rect {*/
+/*  -webkit-mask: url(#mask-1);*/
+/*  mask: url(#mask-1);*/
+/*}*/
+
+/*.block1 rect {*/
+/*  fill: #fff;*/
+
+
+
+/*#mask-1 > rect {*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  display: block;*/
+/*  fill: red;*/
+/*}*/
+
+/*#block1 > rect  {*/
+/*  fill: red;*/
+/*  mask: url(#mask-1);*/
+/*}*/
+video {
+  clip-path: url(#mask-1);
+}
